@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dr. Frederik Temmerman — Gastro-enterologie, Hepatologie & Endoscopie</title>
+  <meta name="description" content="Dr. Frederik Temmerman — gastro-enteroloog met subspecialisatie in hepatologie en endoscopie. Consultaties via RZ Tienen (campussen) en Medisch Centrum voor Huisartsen." />
+
+  <meta property="og:title" content="Dr. Frederik Temmerman — Gastro-enterologie, Hepatologie & Endoscopie" />
+  <meta property="og:description" content="Competenties, zorgaanbod, consultatieplaatsen en links." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#111826; --text:#e8eef7; --muted:#a9b4c3;
+      --line:#223049; --accent:#7dd3fc; --accent2:#a78bfa;
+      --shadow: 0 12px 40px rgba(0,0,0,.35);
+      --radius:18px; --maxw: 1050px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: radial-gradient(1200px 700px at 20% -10%, rgba(125,211,252,.18), transparent 55%),
+                  radial-gradient(900px 600px at 90% 0%, rgba(167,139,250,.16), transparent 50%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--maxw); margin:0 auto; padding:24px}
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: linear-gradient(to bottom, rgba(11,15,20,.85), rgba(11,15,20,.55));
+      border-bottom: 1px solid rgba(34,48,73,.6);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between; gap:16px;
+      padding:14px 24px;
+      max-width:var(--maxw); margin:0 auto;
+    }
+    .brand{display:flex; flex-direction:column; gap:2px; text-decoration:none}
+    .brand strong{font-size:15px; letter-spacing:.2px}
+    .brand span{font-size:12px; color:var(--muted)}
+    .links{display:flex; gap:14px; flex-wrap:wrap}
+    .links a{
+      text-decoration:none; color:var(--muted);
+      font-size:13px; padding:8px 10px; border-radius:999px;
+      border:1px solid transparent;
+    }
+    .links a:hover{color:var(--text); border-color:rgba(125,211,252,.35); background:rgba(125,211,252,.06)}
+    .hero{padding:34px 0 12px}
+    .hero-grid{
+      display:grid; grid-template-columns: 1.2fr .8fr; gap:18px; align-items:stretch;
+    }
+    @media (max-width: 900px){ .hero-grid{grid-template-columns:1fr} }
+    .card{
+      background: linear-gradient(180deg, rgba(17,24,38,.92), rgba(17,24,38,.72));
+      border:1px solid rgba(34,48,73,.75);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .card-inner{padding:20px}
+    h1{
+      margin:0 0 10px;
+      font-size: clamp(26px, 4vw, 40px);
+      letter-spacing:-.4px;
+      line-height:1.12;
+    }
+    .sub{margin:0 0 18px; color:var(--muted); font-size:15px}
+    .chips{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
+    .chip{
+      font-size:12px; padding:8px 10px; border-radius:999px;
+      border:1px solid rgba(34,48,73,.85);
+      background: rgba(125,211,252,.06);
+      color: var(--text);
+    }
+    .btns{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
+    .btn{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:11px 14px; border-radius: 12px;
+      border:1px solid rgba(34,48,73,.85);
+      text-decoration:none; font-size:13px;
+      color:var(--text); background: rgba(255,255,255,.03);
+    }
+    .btn.primary{
+      border-color: rgba(125,211,252,.55);
+      background: linear-gradient(90deg, rgba(125,211,252,.14), rgba(167,139,250,.12));
+    }
+    .btn:hover{transform: translateY(-1px); transition: .15s ease}
+    .section{padding:18px 0}
+    .section h2{margin:0 0 10px; font-size:18px; letter-spacing:.2px}
+    .grid{display:grid; grid-template-columns: repeat(3, 1fr); gap:14px}
+    @media (max-width: 900px){ .grid{grid-template-columns:1fr} }
+    .item{
+      border-radius: 16px;
+      border:1px solid rgba(34,48,73,.75);
+      background: rgba(255,255,255,.02);
+      padding:16px;
+    }
+    .item h3{margin:0 0 6px; font-size:14px}
+    .item p{margin:0; color:var(--muted); font-size:13px}
+    .muted{color:var(--muted)}
+    footer{
+      padding:22px 0 40px;
+      border-top:1px solid rgba(34,48,73,.6);
+      margin-top:22px;
+    }
+    .small{font-size:12px; color:var(--muted)}
+    .kicker{font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:rgba(125,211,252,.9)}
+    .divider{height:1px; background:rgba(34,48,73,.6); margin:14px 0}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Physician",
+    "name":"Dr. Frederik Temmerman",
+    "medicalSpecialty":["Gastroenterology","Hepatology"],
+    "description":"Gastro-enteroloog met subspecialisatie in hepatologie en endoscopie.",
+    "affiliation":[
+      {"@type":"Organization","name":"Regionaal Ziekenhuis Heilig Hart Tienen"},
+      {"@type":"Organization","name":"Medisch Centrum voor Huisartsen"}
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav class="nav" aria-label="Hoofdnavigatie">
+      <a class="brand" href="#top">
+        <strong>Dr. Frederik Temmerman</strong>
+        <span>Gastro-enterologie • Hepatologie • Endoscopie</span>
+      </a>
+      <div class="links">
+        <a href="#competenties">Competenties</a>
+        <a href="#zorgaanbod">Zorgaanbod</a>
+        <a href="#locaties">Locaties & links</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top" class="wrap">
+    <section class="hero" aria-label="Intro">
+      <div class="hero-grid">
+        <div class="card">
+          <div class="card-inner">
+            <div class="kicker">Professioneel profiel</div>
+            <h1>Gastro-enteroloog met subspecialisatie in <span style="color:var(--accent)">hepatologie</span> en <span style="color:var(--accent2)">endoscopie</span>.</h1>
+            <p class="sub">
+              Ik begeleid patiënten met aandoeningen van slokdarm, maag, darmen, lever, galwegen en pancreas — met nadruk op
+              heldere uitleg, evidence-based beslissingen en vlotte samenwerking met verwijzers.
+            </p>
+
+            <div class="chips" role="list" aria-label="Kernexpertise">
+              <span class="chip" role="listitem">Hepatologie (lever & galwegen)</span>
+              <span class="chip" role="listitem">Endoscopie (diagnostisch & therapeutisch)</span>
+              <span class="chip" role="listitem">Gastro-enterologische consultaties</span>
+              <span class="chip" role="listitem">IBD & chronische zorg</span>
+              <span class="chip" role="listitem">Patiëntgerichte opvolging</span>
+            </div>
+
+            <div class="btns">
+              <a class="btn primary" href="#locaties">Bekijk consultatieplaatsen</a>
+              <a class="btn" href="#competenties">Lees mijn competenties</a>
+            </div>
+
+            <div class="divider"></div>
+            <p class="small">
+              Informatieve pagina — vervangt geen medisch advies. Bij acute klachten: neem contact op met de spoeddienst/112.
+            </p>
+          </div>
+        </div>
+
+        <aside class="card" aria-label="Snelkoppelingen">
+          <div class="card-inner">
+            <h2>Snelkoppelingen</h2>
+            <p class="muted" style="margin-top:0">Praktische info en route/aanmeldpagina’s.</p>
+
+            <div class="btns">
+              <a class="btn primary" href="https://www.rztienen.be/" target="_blank" rel="noopener">RZ Tienen — website</a>
+              <a class="btn" href="https://www.rztienen.be/nl/routes/campus-mariendal/44/" target="_blank" rel="noopener">Campus Mariëndal — route</a>
+              <a class="btn" href="https://www.rztienen.be/nl/routes/medisch-centrum-aarschot/47/" target="_blank" rel="noopener">Medisch Centrum Aarschot — route</a>
+              <a class="btn" href="https://www.rztienen.be/nl/contact/" target="_blank" rel="noopener">RZ Tienen — contact</a>
+              <a class="btn" href="https://www.mchinfo.be/" target="_blank" rel="noopener">Medisch Centrum voor Huisartsen (MCH)</a>
+            </div>
+
+            <div class="divider"></div>
+            <p class="small">
+              Wil je ook een knop “Afspraak maken” voor MCH of een specifieke RZ-afsprakenpagina? Dan voeg ik die meteen toe.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="competenties" class="section" aria-label="Competenties">
+      <h2>Competenties</h2>
+      <div class="grid">
+        <div class="item">
+          <h3>Hepatologie</h3>
+          <p>Diagnostiek en opvolging bij lever- en galwegproblematiek, interpretatie van leverbiochemie en gerichte vervolgstappen.</p>
+        </div>
+        <div class="item">
+          <h3>Endoscopie</h3>
+          <p>Indicatiestelling, kwaliteitsvolle uitvoering en duidelijke verslaggeving bij diagnostische en therapeutische endoscopie.</p>
+        </div>
+        <div class="item">
+          <h3>Klinische besluitvorming</h3>
+          <p>Differentiaaldiagnose bij complexe klachten, integratie van labo/beeldvorming en shared decision-making.</p>
+        </div>
+        <div class="item">
+          <h3>Chronische zorg</h3>
+          <p>Begeleiding van patiënten met o.a. inflammatoire darmziekten en chronische leveraandoeningen met focus op continuïteit.</p>
+        </div>
+        <div class="item">
+          <h3>Samenwerking met verwijzers</h3>
+          <p>Heldere terugkoppeling naar huisarts/verwijzer, efficiënt afstemmen van onderzoeken en vervolgbeleid.</p>
+        </div>
+        <div class="item">
+          <h3>Patiëntgerichte communicatie</h3>
+          <p>Duidelijke uitleg over diagnose en behandelopties, met aandacht voor veiligheid, comfort en verwachtingen.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="zorgaanbod" class="section" aria-label="Zorgaanbod">
+      <h2>Zorgaanbod</h2>
+      <div class="card">
+        <div class="card-inner">
+          <p class="muted" style="margin-top:0">
+            Voorbeelden van klachten en thema’s waarmee patiënten vaak terechtkunnen.
+          </p>
+
+          <div class="grid" style="margin-top:10px">
+            <div class="item">
+              <h3>Lever & galwegen (hepatologie)</h3>
+              <p>Afwijkende leverwaarden, steatose/metabole leverziekte, hepatitis, cholestase, galsteenproblematiek (in multidisciplinair overleg).</p>
+            </div>
+            <div class="item">
+              <h3>Endoscopische evaluatie</h3>
+              <p>Onderzoek en opvolging bij alarmsymptomen, reflux/slokdarmklachten, bloedverlies, poliepen, anemie of onverklaarde klachten.</p>
+            </div>
+            <div class="item">
+              <h3>Maag- en darmklachten</h3>
+              <p>Buikpijn, verandering stoelgang, inflammatoire darmziekten, functionele klachten met focus op kwaliteit van leven.</p>
+            </div>
+          </div>
+
+          <p class="small" style="margin-bottom:0; margin-top:14px">
+            Dit blok kan je ook “patiënten-informatie” maken met korte FAQ’s (bv. voorbereiding op endoscopie, nuchter, medicatie, …).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="locaties" class="section" aria-label="Locaties en links">
+      <h2>Locaties & officiële links</h2>
+      <div class="grid">
+        <div class="item">
+          <h3>RZ Tienen — algemeen</h3>
+          <p class="muted">Overzicht van ziekenhuisinfo.</p>
+          <p style="margin:10px 0 0">
+            <a class="btn primary" href="https://www.rztienen.be/" target="_blank" rel="noopener">Open RZ Tienen</a>
+          </p>
+        </div>
+
+        <div class="item">
+          <h3>Campus Mariëndal (Tienen — Kliniekstraat)</h3>
+          <p class="muted">Routepagina voor bezoek.</p>
+          <p style="margin:10px 0 0">
+            <a class="btn primary" href="https://www.rztienen.be/nl/routes/campus-mariendal/44/" target="_blank" rel="noopener">Route naar Campus Mariëndal</a>
+          </p>
+        </div>
+
+        <div class="item">
+          <h3>Medisch Centrum Aarschot (RZ Tienen)</h3>
+          <p class="muted">Routepagina voor bezoek.</p>
+          <p style="margin:10px 0 0">
+            <a class="btn primary" href="https://www.rztienen.be/nl/routes/medisch-centrum-aarschot/47/" target="_blank" rel="noopener">Route naar Medisch Centrum Aarschot</a>
+          </p>
+        </div>
+
+        <div class="item">
+          <h3>RZ Tienen — contact/campussen</h3>
+          <p class="muted">Overzicht van adressen & telefoons.</p>
+          <p style="margin:10px 0 0">
+            <a class="btn primary" href="https://www.rztienen.be/nl/contact/" target="_blank" rel="noopener">Open contactpagina</a>
+          </p>
+        </div>
+
+        <div class="item">
+          <h3>Medisch Centrum voor Huisartsen (MCH)</h3>
+          <p class="muted">Praktische info.</p>
+          <p style="margin:10px 0 0">
+            <a class="btn primary" href="https://www.mchinfo.be/" target="_blank" rel="noopener">Open MCH</a>
+          </p>
+        </div>
+
+        <div class="item">
+          <h3>Extra (optioneel)</h3>
+          <p class="muted">Hier kan je later je publicaties, lezingen of verwijzersinfo toevoegen.</p>
+          <p style="margin:10px 0 0">
+            <a class="btn" href="#contact">Naar contact</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-label="Contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <div class="card-inner">
+          <p class="muted" style="margin-top:0">
+            Voor afspraken en praktische vragen: gebruik bij voorkeur de officiële kanalen van RZ Tienen of MCH.
+          </p>
+
+          <div class="grid" style="margin-top:10px">
+            <div class="item">
+              <h3>RZ Tienen</h3>
+              <p>Afspraak & contact via de ziekenhuiswebsite.</p>
+              <p style="margin:10px 0 0">
+                <a class="btn primary" href="https://www.rztienen.be/nl/raadplegingen/afspraak-maken/" target="_blank" rel="noopener">RZ — afspraak maken</a>
+              </p>
+            </div>
+            <div class="item">
+              <h3>Medisch Centrum voor Huisartsen (MCH)</h3>
+              <p>Raadpleeg MCH voor consultatie-info en afspraken.</p>
+              <p style="margin:10px 0 0">
+                <a class="btn primary" href="https://www.mchinfo.be/" target="_blank" rel="noopener">MCH — website</a>
+              </p>
+            </div>
+            <div class="item">
+              <h3>Voor verwijzers (optioneel)</h3>
+              <p>Je kan hier later een verwijzersblok toevoegen (indicaties, voorkeuren, snelle consultslots).</p>
+              <p class="small" style="margin-top:10px">Placeholder: <code>verwijzers@jouwdomein.be</code></p>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+          <p class="small" style="margin:0">
+            © <span id="year"></span> Dr. Frederik Temmerman — Alle rechten voorbehouden.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap" style="padding:0">
+        <p class="small" style="margin:0">
+          Hostingtip: dit is een statische pagina en werkt op eender welke host (bv. je eigen domein, Netlify, GitHub Pages).
+        </p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
